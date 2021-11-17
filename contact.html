@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты интернет-магазина OJJO</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/NotoSerif/stylesheet.css">
     <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css">
 </head>
 
@@ -19,18 +19,46 @@
                 <div class="menu-burger" >
                     <span></span>
                 </div>
+                <div class="header__logo">
+                    <a class="logo logo--desktop header__logo--desktop" href="index.html">
+                        <img src="./images/header-logo.png" alt="logo">
+                    </a>
+                </div>
+                
                 <nav class="menu">
                     <a class="menu__link" href="#">Контрагентам</a>
                     <a class="menu__link" href="contact.html">Дизайнерам</a>
                     <a class="menu__link" href="#">Вакансии</a>
-                    <a class="logo logo--indent" href="index.html"><img src="./images/header-logo.png" alt="logo"></a>
+                    <a class="logo logo--indent logo--mobile" href="index.html"><img src="images/header-logo.png" alt="logo"></a>
                     <a class="menu__link search" href="#">поиск</a>
-                    <div class="account">
-                        <a class="sing-in" href="#">Вход</a>
-                        <a class="sing-up" href="#">Регистрация</a>
+                    <div class="account-info">
+                        <a class="account-info__sing-in" href="#">Вход</a>
+                        <a class="account-info__sing-up" href="#">Регистрация</a>
                     </div>
-                    <a class="menu__link" href="#"><img src="./images/menu-account.svg" alt="account"></a>
-                    <a class="menu__link" href="#"><img src="./images/menu-like.svg" alt="like"></a>
+                    <div class="account-icons">
+                        <a class="account-icons__account" href="#">
+                            <picture>
+                                <source srcset="./images/icon/account-mobile.svg" type="image/svg" media="(max-width: 800px)">
+                                <img src="images/menu/menu-account.svg" alt="">
+                            </picture>
+                        </a>
+                        <a class="account-icons__like" href="#">
+                            <picture>
+                                <source media="(min-width: 800px)" srcset="images/icon/like-mobile.svg" type="image/svg">
+                                <img src="images/menu/menu-like.svg" alt="like">
+                            </picture>
+                        </a>
+                        
+                        <!--<a class="account-icons__account" href="#"><img src="./images/menu-account.svg" alt="account"></a>-->
+                        <!--<a class="account-icons__like" href="#"><img src="./images/like-mobile.svg" alt="like"></a>-->
+                    </div>
+                    <div class="socials socials--mobile">
+                        <a class="socials__link" href="#!"><img src="images/socials/youtube-mobile.svg" alt="youtube"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/vkontakte-mobile.svg" alt="vkontakte"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/facebook-mobile.svg" alt="facebook"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/telegram-mobile.svg" alt="telegram"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/etsy-mobile.svg" alt="etsy"></a>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -78,7 +106,7 @@
                     </div>
                     
                     
-                    <img class="contacts__img" src="./images/contact__maps.jpg" alt="maps">
+                    <img class="contacts__img" src="images/contact__maps.jpg" alt="maps">
                 </div>
             </div>
         </section>       
@@ -102,8 +130,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
                     </p>
                     <div class="payment">
-                        <a class="payment__link" href="#!"><img src="./images/visa.jpg" alt="visa"></a>
-                        <a class="payment__link" href="#!"><img src="./images/mastercard.jpg" alt="mastercard"></a>
+                        <a class="payment__link" href="#!"><img src="images/footer/visa.jpg" alt="visa"></a>
+                        <a class="payment__link" href="#!"><img src="images/footer/mastercard.jpg" alt="mastercard"></a>
                     </div>
                 </div>
                 <div class="footer__column">
@@ -120,11 +148,11 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
                     </p>
                     <div class="socials">
-                        <a class="socials__link" href="#!"><img src="./images/youtube.svg" alt="youtube"></a>
-                        <a class="socials__link" href="#!"><img src="./images/vkontakte.svg" alt="vkontakte"></a>
-                        <a class="socials__link" href="#!"><img src="./images/facebook.svg" alt="facebook"></a>
-                        <a class="socials__link" href="#!"><img src="./images/telegram.svg" alt="telegram"></a>
-                        <a class="socials__link" href="#!"><img src="./images/etsy.svg" alt="etsy"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/youtube.svg" alt="youtube"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/vkontakte.svg" alt="vkontakte"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/facebook.svg" alt="facebook"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/telegram.svg" alt="telegram"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/etsy.svg" alt="etsy"></a>
                     </div>
                 </div>
             </div>

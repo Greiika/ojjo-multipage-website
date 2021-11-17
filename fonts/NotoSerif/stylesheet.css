@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Noto Serif';
+	src: url('NotoSerif-Bold.eot');
+	src: local('Noto Serif Bold'), local('NotoSerif-Bold'),
+		url('NotoSerif-Bold.eot?#iefix') format('embedded-opentype'),
+		url('NotoSerif-Bold.woff') format('woff'),
+		url('NotoSerif-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}

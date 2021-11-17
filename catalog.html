@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/NotoSerif/stylesheet.css">
     <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css">
 </head>
 <body>
@@ -17,19 +17,46 @@
                 <div class="menu-burger" >
                     <span></span>
                 </div>
+                
+                <div class="header__logo">
+                    <a class="logo logo--desktop header__logo--desktop" href="index.html">
+                        <img src="images/header-logo.png" alt="logo">
+                    </a>
+                </div>
+                
                 <nav class="menu">
                     <a class="menu__link" href="#">Контрагентам</a>
                     <a class="menu__link" href="contact.html">Дизайнерам</a>
                     <a class="menu__link" href="#">Вакансии</a>
-                    <a class="logo logo--indent" href="index.html"><img src="./images/header-logo.png" alt="logo"></a>
+                    <a class="logo logo--indent logo--mobile" href="index.html"><img src="images/header-logo.png" alt="logo"></a>
                     <a class="menu__link search" href="#">поиск</a>
                     <div class="account-info">
                         <a class="account-info__sing-in" href="#">Вход</a>
                         <a class="account-info__sing-up" href="#">Регистрация</a>
                     </div>
                     <div class="account-icons">
-                        <a class="account-icons__account" href="#"><img src="./images/menu-account.svg" alt="account"></a>
-                        <a class="account-icons__like" href="#"><img src="./images/menu-like.svg" alt="like"></a>
+                        <a class="account-icons__account" href="#">
+                            <picture>
+                                <source srcset="images/icon/account-mobile.svg" type="image/svg" media="(max-width: 800px)">
+                                <img src="images/menu/menu-account.svg" alt="">
+                            </picture>
+                        </a>
+                        <a class="account-icons__like" href="#">
+                            <picture>
+                                <source media="(min-width: 800px)" srcset="images/icon/like-mobile.svg" type="image/svg">
+                                <img src="images/menu/menu-like.svg" alt="like">
+                            </picture>
+                        </a>
+                        
+                        <!--<a class="account-icons__account" href="#"><img src="./images/menu-account.svg" alt="account"></a>-->
+                        <!--<a class="account-icons__like" href="#"><img src="./images/like-mobile.svg" alt="like"></a>-->
+                    </div>
+                    <div class="socials socials--mobile">
+                        <a class="socials__link" href="#!"><img src="images/socials/youtube-mobile.svg" alt="youtube"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/vkontakte-mobile.svg" alt="vkontakte"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/facebook-mobile.svg" alt="facebook"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/telegram-mobile.svg" alt="telegram"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/etsy-mobile.svg" alt="etsy"></a>
                     </div>
                 </nav>
             </div>
@@ -46,7 +73,7 @@
                         <div class="filter__column">
                             <div class="filter__header">
                                 <span class="filter__current">бренд</span>
-                                <div class="filter__icon"><img src="./images/down-arrow.svg" alt="arrow"></div>
+                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
                             </div>
                             <ul class="filter__list">
                                 <li class="filter__item">One</li>
@@ -60,7 +87,7 @@
                         <div class="filter__column">
                             <div class="filter__header">
                                 <span class="filter__current">Цена</span>
-                                <div class="filter__icon"><img src="./images/down-arrow.svg" alt="arrow"></div>
+                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
                             </div>
                             <ul class="filter__list">
                                 <li class="filter__item">One</li>
@@ -74,7 +101,7 @@
                         <div class="filter__column">
                             <div class="filter__header">
                                 <span class="filter__current">Для кого</span>
-                                <div class="filter__icon"><img src="./images/down-arrow.svg" alt="arrow"></div>
+                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
                             </div>
                             <ul class="filter__list">
                                 <li class="filter__item">One</li>
@@ -88,7 +115,7 @@
                         <div class="filter__column">
                             <div class="filter__header">
                                 <span class="filter__current">Коллекция </span>
-                                <div class="filter__icon"><img src="./images/down-arrow.svg" alt="arrow"></div>
+                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
                             </div>
                             <ul class="filter__list">
                                 <li class="filter__item">One</li>
@@ -102,7 +129,7 @@
                         <div class="filter__column">
                             <div class="filter__header">
                                 <span class="filter__current">Сезон</span>
-                                <div class="filter__icon"><img src="./images/down-arrow.svg" alt="arrow"></div>
+                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
                             </div>
                             <ul class="filter__list">
                                 <li class="filter__item">One</li>
@@ -116,7 +143,7 @@
                         <div class="filter__column">
                             <div class="filter__header">
                                 <span class="filter__current">Событие </span>
-                                <div class="filter__icon"><img src="./images/down-arrow.svg" alt="arrow"></div>
+                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
                             </div>
                             <ul class="filter__list">
                                 <li class="filter__item">One</li>
@@ -132,21 +159,21 @@
                 <div class="product">
                     <div class="product__inner">
                         <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
                         </a>
 
                         <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
                         </a>
 
                         <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
@@ -155,42 +182,42 @@
                         <hr class="product__lines">
 
                         <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
                         </a>
 
                         <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
                         </a>
 
                         <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
                         </a>
 
                         <a class="product__card product__card--hidden " href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
                         </a>
 
                         <a class="product__card product__card--hidden " href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
                         </a>
 
                         <a class="product__card product__card--hidden " href="pendant.html">
-                            <img class="product__card-img" src="./images/product-card.jpg" alt="product-card">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
                             <span class="product__card-title">Подвеска</span>
                             <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
                             <p class="product__card-price">175 000 ₽</p>
@@ -212,19 +239,19 @@
                         </div>
                         <div class="seo-info__items">
                             <div class="seo-info__item">
-                                <img class="seo-info__icon" src="./images/delivery.svg" alt="icon">
+                                <img class="seo-info__icon" src="images/seo-info/delivery.svg" alt="icon">
                                 <span class="seo-info__title" >Бесплатная <br> доставка</span>
                             </div>
                             <div class="seo-info__item">
-                                <img class="seo-info__icon" src="./images/list.svg" alt="icon">
+                                <img class="seo-info__icon" src="images/seo-info/list.svg" alt="icon">
                                 <span class="seo-info__title" >Индивидуальный <br> дизайн</span>
                             </div>
                             <div class="seo-info__item">
-                                <img class="seo-info__icon" src="./images/ribbon-design.svg" alt="icon">
+                                <img class="seo-info__icon" src="images/seo-info/ribbon-design.svg" alt="icon">
                                 <span class="seo-info__title" >Бесплатная <br> примерка</span>
                             </div>
                             <div class="seo-info__item">
-                                <img class="seo-info__icon" src="./images/jewelry.svg" alt="icon">
+                                <img class="seo-info__icon" src="images/seo-info/jewelry.svg" alt="icon">
                                 <span class="seo-info__title" >Личный <br> подход</span>
                             </div>
                         </div>
@@ -279,8 +306,8 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
                     </p>
                     <div class="payment">
-                        <a class="payment__link" href="#!"><img src="./images/visa.jpg" alt="visa"></a>
-                        <a class="payment__link" href="#!"><img src="./images/mastercard.jpg" alt="mastercard"></a>
+                        <a class="payment__link" href="#!"><img src="images/footer/visa.jpg" alt="visa"></a>
+                        <a class="payment__link" href="#!"><img src="images/footer/mastercard.jpg" alt="mastercard"></a>
                     </div>
                 </div>
                 <div class="footer__column">
@@ -297,11 +324,11 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
                     </p>
                     <div class="socials">
-                        <a class="socials__link" href="#!"><img src="./images/youtube.svg" alt="youtube"></a>
-                        <a class="socials__link" href="#!"><img src="./images/vkontakte.svg" alt="vkontakte"></a>
-                        <a class="socials__link" href="#!"><img src="./images/facebook.svg" alt="facebook"></a>
-                        <a class="socials__link" href="#!"><img src="./images/telegram.svg" alt="telegram"></a>
-                        <a class="socials__link" href="#!"><img src="./images/etsy.svg" alt="etsy"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/youtube.svg" alt="youtube"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/vkontakte.svg" alt="vkontakte"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/facebook.svg" alt="facebook"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/telegram.svg" alt="telegram"></a>
+                        <a class="socials__link" href="#!"><img src="images/socials/etsy.svg" alt="etsy"></a>
                     </div>
                 </div>
             </div>

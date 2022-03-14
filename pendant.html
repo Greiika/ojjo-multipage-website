@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Подвеска Dolce & Gabbara</title>
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="./fonts/NotoSerif/stylesheet.css">
     <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css">
-    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
+
     <header class="header header-bg">
         <div class="container header__container header__container--height ">
-            <div class="header__head ">
+            <div class="header__head">
                 <div class="menu-burger" >
                     <span></span>
                 </div>
-                
                 <div class="header__logo">
                     <a class="logo logo--desktop header__logo--desktop" href="index.html">
                         <img src="images/header-logo.png" alt="logo">
@@ -47,6 +48,9 @@
                                 <img src="images/menu/menu-like.svg" alt="like">
                             </picture>
                         </a>
+                        
+                        <!--<a class="account-icons__account" href="#"><img src="./images/menu-account.svg" alt="account"></a>-->
+                        <!--<a class="account-icons__like" href="#"><img src="./images/like-mobile.svg" alt="like"></a>-->
                     </div>
                     <div class="socials socials--mobile">
                         <a class="socials__link" href="#!"><img src="images/socials/youtube-mobile.svg" alt="youtube"></a>
@@ -60,172 +64,66 @@
         </div>
     </header>
 
-    <main class="main">
 
-        <section class="catalog">
-            <div class="catalog__container container">
+    <main class="main ">
 
-                <div class="filter">
-                    <div class="filter__inner">
-                        <div class="filter__column">
-                            <div class="filter__header">
-                                <span class="filter__current">бренд</span>
-                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
+        <section class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#!">Категория</a></li>
+                <li class="breadcrumbs__item">Подвеска Dolce & Gabarra</li>
+            </ul>
+        </section>
+
+        <section class="product-description">
+            <div class="product-description__container container">
+
+                <div class="description">
+                    <div class="description__column">
+                        <div class="description__inner-img">
+                            <div class="description__img--active">
+                                <img class="description__img" src="images/pendant.jpg" alt="pendant">
                             </div>
-                            <ul class="filter__list">
-                                <li class="filter__item">One</li>
-                                <li class="filter__item">Two</li>
-                                <li class="filter__item">Three</li>
-                                <li class="filter__item">Four</li>
-                                <li class="filter__item">Five</li>
-                            </ul>
+                            <div class="description__img-mini">
+                                <img class="description__img" src="images/pendant-mini.jpg" alt="pendant">
+                                <img class="description__img" src="images/pendant-mini.jpg" alt="pendant">
+                                <img class="description__img" src="images/pendant-mini.jpg" alt="pendant">
+                            </div>
                         </div>
-    
-                        <div class="filter__column">
-                            <div class="filter__header">
-                                <span class="filter__current">Цена</span>
-                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
-                            </div>
-                            <ul class="filter__list">
-                                <li class="filter__item">One</li>
-                                <li class="filter__item">Two</li>
-                                <li class="filter__item">Three</li>
-                                <li class="filter__item">Four</li>
-                                <li class="filter__item">Five</li>
+                        
+                    </div>
+                    <div class="description__column">
+                        <div class="description__content">
+                            <h2 class="description__title">Подвеска Dolce & Gabbara</h2>
+                            <ul class="description__items">
+                                <li class="description__item">Категория:</li>
+                                <li class="description__item">Подвески</li>
+                                <li class="description__item">Бренд:</li>
+                                <li class="description__item">Dolce & Gabbara</li>
                             </ul>
-                        </div>
-    
-                        <div class="filter__column">
-                            <div class="filter__header">
-                                <span class="filter__current">Для кого</span>
-                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
-                            </div>
-                            <ul class="filter__list">
-                                <li class="filter__item">One</li>
-                                <li class="filter__item">Two</li>
-                                <li class="filter__item">Three</li>
-                                <li class="filter__item">Four</li>
-                                <li class="filter__item">Five</li>
-                            </ul>
-                        </div>
-    
-                        <div class="filter__column">
-                            <div class="filter__header">
-                                <span class="filter__current">Коллекция </span>
-                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
-                            </div>
-                            <ul class="filter__list">
-                                <li class="filter__item">One</li>
-                                <li class="filter__item">Two</li>
-                                <li class="filter__item">Three</li>
-                                <li class="filter__item">Four</li>
-                                <li class="filter__item">Five</li>
-                            </ul>
-                        </div>
-    
-                        <div class="filter__column">
-                            <div class="filter__header">
-                                <span class="filter__current">Сезон</span>
-                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
-                            </div>
-                            <ul class="filter__list">
-                                <li class="filter__item">One</li>
-                                <li class="filter__item">Two</li>
-                                <li class="filter__item">Three</li>
-                                <li class="filter__item">Four</li>
-                                <li class="filter__item">Five</li>
-                            </ul>
-                        </div>
-    
-                        <div class="filter__column">
-                            <div class="filter__header">
-                                <span class="filter__current">Событие </span>
-                                <div class="filter__icon"><img src="images/arrow/down-arrow.svg" alt="arrow"></div>
-                            </div>
-                            <ul class="filter__list">
-                                <li class="filter__item">One</li>
-                                <li class="filter__item">Two</li>
-                                <li class="filter__item">Three</li>
-                                <li class="filter__item">Four</li>
-                                <li class="filter__item">Five</li>
-                            </ul>
+
+                            <p class="description__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit mattis scelerisque odio
+                                nunc. Ipsum quis facilisis turpis vulputate. Viverra dignissim in nec phasellus.
+                                Tincidunt est ipsum diam, vestibulum dignissim dui diam. Et nulla sit convallis orci
+                                est, fames sit luctus lacus. Nunc donec malesuada amet eget eget pharetra. Ultricies et,
+                                ac varius at amet viverra feugiat non massa. <br>
+                                Vel vel in urna, sodales urna ac sed felis. Tellus augue et senectus malesuada faucibus
+                                sollicitudin ornare. Sit non et sit enim in ornare velit. Ac imperdiet vitae, orci, nec
+                                scelerisque enim sit enim risus.
+                                Et nulla sit convallis orci est, fames sit luctus lacus.
+                            </p>
+                            <span class="description__price">200 000 ₽ </span>
+                            <button class="button description__buy-btn">купить</button>
+                            <button class="button description__basket-btn">добавить в корзину</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="product">
-                    <div class="product__inner">
-                        <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-
-                        <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-
-                        <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-
-                        <hr class="product__lines">
-
-                        <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-
-                        <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-
-                        <a class="product__card" href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-
-                        <a class="product__card product__card--hidden " href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-
-                        <a class="product__card product__card--hidden " href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-
-                        <a class="product__card product__card--hidden " href="pendant.html">
-                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
-                            <span class="product__card-title">Подвеска</span>
-                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
-                            <p class="product__card-price">175 000 ₽</p>
-                        </a>
-                    </div>
-                    <div class="product__btn">
-                        <button class="button product__btn-link">покажите еще</button>
-                    </div>
-                </div>
-                
-                <div class="seo-info">
+                <div class="seo-info ">
                     <div class="seo-info__inner">
                         <div class="seo-info__description">
                             <div class="seo-info__description-text">
@@ -255,12 +153,41 @@
                     </div>
                 </div>
 
+                <div class="product-still">
+
+                    <div class="heading">
+                        <span class="title">Мы подготовили для вас кое-что еще</span>
+                        <h2 class="subtitle">Товары, которые могут Вам понравиться</h2>
+                    </div>
+        
+                    <div class="product-still__inner">
+                        <a class="product__card" href="pendant.html">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
+                            <span class="product__card-title">Подвеска</span>
+                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
+                            <p class="product__card-price">175 000 ₽</p>
+                        </a>
+        
+                        <a class="product__card" href="pendant.html">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
+                            <span class="product__card-title">Подвеска</span>
+                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
+                            <p class="product__card-price">175 000 ₽</p>
+                        </a>
+        
+                        <a class="product__card" href="pendant.html">
+                            <img class="product__card-img" src="images/card/product-card.jpg" alt="product-card">
+                            <span class="product__card-title">Подвеска</span>
+                            <h3 class="product__card-subtitle">Dolce & Gabanna</h3>
+                            <p class="product__card-price">175 000 ₽</p>
+                        </a>
+                    </div>
+        
+                </div>
             </div>
         </section>
-
-
-
-        <section class="special-offer">
+        
+        <section class="special-offer ">
             <div class="special-offer__container  container">
                 <div class="heading heading--color">
                     <span class="heading__title">Полезные советы и персональный предложения</span>
@@ -285,7 +212,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer ">
         <div class="footer__container container">
             <div class="footer__content">
                 <div class="footer__column">
@@ -340,4 +267,5 @@
 
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
